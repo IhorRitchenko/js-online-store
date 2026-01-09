@@ -3,7 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f1f5f9;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
@@ -16,6 +19,7 @@ header {
 }
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,17 +187,6 @@ main {
     background-color: black;
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 5vh;
-    border: solid black 1px;
-    margin-top: 30px;
-    color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .buy-btn {
     cursor: pointer;
     border: solid black 1px;
@@ -207,4 +200,16 @@ footer {
     color: rgb(61, 61, 244);
     border: solid rgb(61, 61, 244) 1px;
     transition: .3s;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 5vh;
+    border: solid black 1px;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
